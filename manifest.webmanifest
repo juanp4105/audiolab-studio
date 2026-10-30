@@ -1,0 +1,28 @@
+{
+  "id": "./",
+  "name": "AudioLab Studio",
+  "short_name": "AudioLab",
+  "description": "Editor de audio multipista en el navegador: importar WAV y MP3, editar, aplicar efectos, mezclar y exportar WAV o MP3.",
+  "lang": "es",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#121417",
+  "theme_color": "#121417",
+  "categories": ["music", "education", "productivity"],
+  "icons": [
+    { "src": "icono-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icono-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icono-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "file_handlers": [
+    {
+      "action": "./",
+      "name": "Proyecto de AudioLab Studio",
+      "accept": { "application/x-audiolab-project": [".audiolab"] },
+      "icons": [{ "src": "icono-proyecto-256.png", "sizes": "256x256", "type": "image/png" }],
+      "launch_type": "single-client"
+    }
+  ]
+}
