@@ -2,10 +2,12 @@
 
 *Rimay* significa «hablar» y «la palabra» en kichwa. Rimay Studio (antes AudioLab Studio) es un editor de audio
 multipista que funciona en el navegador, para cualquier persona que quiera aprender a editar y producir con sonido.
-Graba desde el micrófono (también sobre la música de otras pistas), dibuja líneas de volumen y panorama sobre cada clip, importa WAV, MP3, M4A, OGG, OPUS y FLAC; edita con las herramientas Mover, Cuchilla, Mover en bloque y Selección
+Graba desde el micrófono (también sobre la música de otras pistas), dibuja líneas de volumen y panorama sobre cada clip, escribe guiones y graba cada línea, importa WAV, MP3, M4A, OGG, OPUS y FLAC; edita con las herramientas Mover, Cuchilla, Mover en bloque y Selección
 de tiempo; aplica efectos y favoritos; mezcla con medidores reales y exporta WAV o MP3.
 
 - Página publicada: https://juanp4105.github.io/audiolab-studio/
+- Taller de guion: https://juanp4105.github.io/audiolab-studio/guion.html — escribir guiones de radio, pódcast y
+  anuncios desde plantillas, con la duración en vivo, y enviarlos a Rimay Studio para grabar cada línea.
 - `index.html` es la compilación de un solo archivo (`npm run build:single` en el proyecto fuente).
   Para actualizarla, compile de nuevo y copie aquí el contenido de `dist-single/web/`.
 - Los proyectos se guardan como archivos `.rimay` (los `.audiolab` anteriores se siguen abriendo). En Chrome y Edge,
