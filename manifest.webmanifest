@@ -1,8 +1,8 @@
 {
   "id": "./",
-  "name": "AudioLab Studio",
-  "short_name": "AudioLab",
-  "description": "Editor de audio multipista en el navegador: importar WAV y MP3, editar, aplicar efectos, mezclar y exportar WAV o MP3.",
+  "name": "Rimay Studio",
+  "short_name": "Rimay",
+  "description": "Editor de audio multipista para aprender a producir con sonido: graba, edita, mezcla y exporta en WAV o MP3, sin cuentas ni nube.",
   "lang": "es",
   "dir": "ltr",
   "start_url": "./",
@@ -19,8 +19,8 @@
   "file_handlers": [
     {
       "action": "./",
-      "name": "Proyecto de AudioLab Studio",
-      "accept": { "application/x-audiolab-project": [".audiolab"] },
+      "name": "Proyecto de Rimay Studio",
+      "accept": { "application/x-rimay-project": [".rimay"], "application/x-audiolab-project": [".audiolab"] },
       "icons": [{ "src": "icono-proyecto-256.png", "sizes": "256x256", "type": "image/png" }],
       "launch_type": "single-client"
     }
