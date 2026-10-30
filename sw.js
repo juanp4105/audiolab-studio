@@ -1,7 +1,7 @@
 // Service worker de AudioLab Studio: permite instalar la app y usarla sin conexión.
 // Estrategia: red primero para la página (así cada visita recibe la versión publicada más reciente)
 // y copia en caché como respaldo cuando no hay conexión.
-const CACHE = "audiolab-v2";
+const CACHE = "audiolab-v3";
 const CORE = ["./", "./index.html", "./manifest.webmanifest", "./icono-192.png", "./icono-512.png", "./icono-proyecto-256.png"];
 
 self.addEventListener("install", (e) => {
