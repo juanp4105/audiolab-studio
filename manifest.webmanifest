@@ -2,7 +2,7 @@
   "id": "./",
   "name": "Rimay Studio",
   "short_name": "Rimay",
-  "description": "Editor de audio multipista para aprender a producir con sonido: graba, edita, mezcla y exporta en WAV o MP3, sin cuentas ni nube.",
+  "description": "Editor de audio multipista para aprender a producir con sonido: graba, edita, mezcla y exporta en WAV o MP3, sin cuentas ni nube. · Multitrack audio editor for learning audio production: record, edit, mix and export WAV or MP3, with no accounts and no cloud.",
   "lang": "es",
   "dir": "ltr",
   "start_url": "./",
@@ -19,7 +19,7 @@
   "file_handlers": [
     {
       "action": "./",
-      "name": "Proyecto de Rimay Studio",
+      "name": "Rimay Studio project / Proyecto de Rimay Studio",
       "accept": { "application/x-rimay-project": [".rimay"], "application/x-audiolab-project": [".audiolab"] },
       "icons": [{ "src": "icono-proyecto-256.png", "sizes": "256x256", "type": "image/png" }],
       "launch_type": "single-client"

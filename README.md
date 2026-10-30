@@ -18,4 +18,18 @@ de tiempo; aplica efectos y favoritos; mezcla con medidores reales y exporta WAV
   flechas, línea de tiempo operable sin ratón y avisos hablados.
 - `manifest.webmanifest` y `sw.js` hacen que el sitio pueda instalarse como aplicación: una vez instalada,
   el sistema abre los archivos `.rimay` con Rimay Studio (doble clic) y funciona sin conexión.
+- Interfaz en español y en inglés: se elige según el idioma del navegador y se cambia en *Vista › Idioma / Language*
+  (o con `?lang=en` / `?lang=es` en la dirección).
 - Licencias de los componentes incluidos: `LICENCIAS.txt`.
+
+## English
+
+*Rimay* means “to speak” and “the word” in Kichwa, an Indigenous language of the Andes. Rimay Studio is a multitrack
+audio editor that runs in the browser, for anyone who wants to learn audio editing and production: record from the
+microphone (also over music on other tracks), draw volume and pan lines on each clip, write scripts and record each line,
+import WAV, MP3, M4A, OGG, OPUS and FLAC, edit, apply effects, mix with real meters and export WAV or MP3. No accounts,
+no cloud: your audio never leaves your computer.
+
+- App: https://juanp4105.github.io/audiolab-studio/?lang=en
+- Script Workshop: https://juanp4105.github.io/audiolab-studio/guion.html?lang=en
+- The interface follows the browser language; switch it in *View › Idioma / Language*.
