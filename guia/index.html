@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Guía de uso de Rimay Studio · 2.ª edición</title>
+<meta name="description" content="Guía gratuita, paso a paso, para escribir el guion, grabar, editar, mezclar y exportar con Rimay Studio, el editor de audio multipista en el navegador. Licencia CC BY-NC-SA 4.0.">
+<meta name="author" content="Juan Pablo Arrobo-Agila">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Guía de uso de Rimay Studio · 2.ª edición">
+<meta property="og:description" content="Del guion al programa terminado: guía gratuita del editor de audio Rimay Studio, con ejercicios, un caso práctico y audios de práctica.">
+<meta property="og:url" content="https://juanp4105.github.io/audiolab-studio/guia/">
+<meta property="og:image" content="https://juanp4105.github.io/audiolab-studio/guia/compartir.jpg">
+<meta property="og:image:width" content="1120">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_EC">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">
+<link rel="icon" href="../icono-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;500;600&family=JetBrains+Mono&family=Public+Sans:wght@400;600&family=Spectral:ital,wght@1,300&display=swap" rel="stylesheet">
+<style>
+  :root { --ink: #121417; --panel: #181b1f; --line: #2a2f35; --text: #E6E9ED; --muted: #AEB5BD; --faint: #8B939C; --teal: #3fc1a5; --amber: #e0a33a; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--ink); color: var(--text); font: 400 17px/1.6 'Public Sans', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: var(--teal); }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+  .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; letter-spacing: .28em; text-transform: uppercase; font-size: 12.5px; }
+  header.top { display: flex; justify-content: space-between; gap: 16px; padding: 28px 0 16px; border-bottom: 1px solid var(--line); color: var(--faint); }
+  header.top a { color: var(--faint); text-decoration: none; }
+  header.top .der { color: var(--amber); }
+  .hero { display: grid; grid-template-columns: 1fr 300px; gap: 56px; align-items: start; padding: 56px 0 48px; }
+  .ceja { color: var(--amber); }
+  h1 { font: 300 clamp(56px, 9vw, 104px)/.92 'Barlow Semi Condensed', sans-serif; margin-top: 18px; }
+  .kichwa { color: var(--faint); margin-top: 14px; font-size: 11.5px; letter-spacing: .18em; }
+  .kichwa i { color: var(--teal); font-style: normal; }
+  .lema { font: italic 300 clamp(26px, 3.4vw, 36px)/1.15 'Spectral', serif; margin-top: 26px; }
+  .lema b { color: var(--teal); font-weight: 300; }
+  .intro { color: var(--muted); margin-top: 16px; max-width: 560px; }
+  .acciones { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+  .btn { display: inline-flex; flex-direction: column; gap: 2px; padding: 14px 20px; border-radius: 10px; text-decoration: none; border: 1.5px solid var(--line); color: var(--text); background: var(--panel); min-width: 230px; }
+  .btn b { font: 600 19px/1.2 'Barlow Semi Condensed', sans-serif; }
+  .btn span { font-size: 13.5px; color: var(--muted); }
+  .btn.pri { background: var(--teal); border-color: var(--teal); color: #0f1113; }
+  .btn.pri span { color: #123a32; }
+  .btn:hover { border-color: var(--teal); }
+  .btn:focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; }
+  .portada { display: block; width: 100%; border: 1px solid var(--line); box-shadow: 0 24px 60px rgba(0, 0, 0, .55); }
+  section { border-top: 1px solid var(--line); padding: 40px 0; }
+  h2 { font: 500 28px/1.2 'Barlow Semi Condensed', sans-serif; margin-bottom: 18px; }
+  .cifras { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .cifras b { display: block; font: 300 52px/1 'Barlow Semi Condensed', sans-serif; color: var(--amber); }
+  .cifras span { display: block; margin-top: 10px; color: var(--muted); font-size: 11px; letter-spacing: .22em; line-height: 1.6; }
+  ol.caps { columns: 2; column-gap: 40px; padding-left: 22px; color: var(--muted); }
+  ol.caps li { margin: 4px 0; break-inside: avoid; }
+  ol.caps li b { color: var(--text); font-weight: 600; }
+  .lic { display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: start; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 22px 24px; }
+  .cc { display: flex; gap: 5px; align-items: center; }
+  .cc span { font: 600 12px/1 'Barlow Semi Condensed', sans-serif; background: var(--text); color: var(--ink); border-radius: 4px; padding: 5px 7px; letter-spacing: .04em; }
+  .lic ul { margin: 8px 0 0 18px; color: var(--muted); }
+  .cita { margin-top: 14px; padding: 16px 20px; border-left: 3px solid var(--teal); background: var(--panel); color: var(--muted); font-size: 15px; }
+  footer { border-top: 1px solid var(--line); padding: 28px 0 48px; color: var(--faint); font-size: 14px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  @media (max-width: 760px) {
+    .hero { grid-template-columns: 1fr; gap: 32px; padding-top: 36px; }
+    .hero figure { max-width: 260px; }
+    .cifras { grid-template-columns: repeat(2, 1fr); }
+    ol.caps { columns: 1; }
+    .lic { grid-template-columns: 1fr; }
+    header.top { flex-direction: column; gap: 6px; }
+    .btn { min-width: 0; width: 100%; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top mono"><a href="../">Rimay Studio</a><span class="der">Guía de uso · 2.ª edición · 2026</span></header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <p class="ceja mono">Guía de uso paso a paso · gratuita</p>
+        <h1>Rimay Studio</h1>
+        <p class="kichwa mono"><i>rimay</i> · «hablar», «la palabra» en kichwa</p>
+        <p class="lema">Del guion al programa <b>terminado.</b></p>
+        <p class="intro">Una guía para aprender a escribir el guion, grabar con el micrófono, editar, mezclar y exportar con Rimay Studio, el editor de audio multipista que funciona en el navegador. Pensada para estudiantes, docentes y cualquier persona que quiera producir radio y pódcast.</p>
+        <div class="acciones">
+          <a class="btn pri" href="Guia_de_uso_Rimay_Studio.pdf" download><b>Descargar la guía</b><span>PDF · 64 páginas · 10 MB</span></a>
+          <a class="btn" href="Kit_practica_Rimay_Studio.zip" download><b>Kit de práctica</b><span>6 audios para los ejercicios · ZIP · 10 MB</span></a>
+          <a class="btn" href="../"><b>Abrir el editor</b><span>Gratis, en el navegador</span></a>
+        </div>
+      </div>
+      <figure><img class="portada" src="portada.jpg" alt="Portada de la Guía de uso de Rimay Studio, segunda edición, de Juan Pablo Arrobo-Agila, UTPL, 2026" width="620" height="877"></figure>
+    </div>
+
+    <section aria-labelledby="t-contenido">
+      <h2 id="t-contenido">Qué contiene</h2>
+      <div class="cifras">
+        <div><b>11</b><span class="mono">Capítulos con ejercicios</span></div>
+        <div><b>34</b><span class="mono">Capturas reales anotadas</span></div>
+        <div><b>01</b><span class="mono">Caso práctico: del guion al MP3</span></div>
+        <div><b>06</b><span class="mono">Audios de práctica</span></div>
+      </div>
+      <ol class="caps" style="margin-top:28px">
+        <li><b>Primeros pasos:</b> la pantalla, el idioma y el teclado</li>
+        <li><b>Importar y organizar</b> audios y pistas</li>
+        <li><b>Escuchar</b> y moverse por el proyecto</li>
+        <li><b>Editar</b> con las herramientas</li>
+        <li><b>Grabar</b> desde el micrófono</li>
+        <li><b>Volumen y panorama</b> sobre el clip</li>
+        <li><b>Mezclar:</b> niveles y medidores</li>
+        <li><b>Efectos</b> y favoritos</li>
+        <li><b>Escribir y grabar el guion</b></li>
+        <li><b>Guardar y exportar</b></li>
+        <li><b>Caso práctico:</b> una cápsula radial</li>
+        <li>Anexos: atajos, glosario, solución de problemas y kit</li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="t-licencia">
+      <h2 id="t-licencia">Licencia y cita</h2>
+      <div class="lic">
+        <div class="cc" aria-hidden="true"><span>CC</span><span>BY</span><span>NC</span><span>SA</span></div>
+        <div>
+          <p>Esta guía se distribuye bajo la licencia <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" rel="license">Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.</p>
+          <ul>
+            <li>Puede copiarla, imprimirla, compartirla y adaptarla para la enseñanza y el aprendizaje.</li>
+            <li>Debe citar al autor y la fuente, e indicar si hizo cambios.</li>
+            <li>No puede venderla ni usarla con fines comerciales; las adaptaciones se comparten con la misma licencia.</li>
+          </ul>
+        </div>
+      </div>
+      <p class="cita">Arrobo-Agila, J. P. (2026). <i>Guía de uso de Rimay Studio: Editor de audio multipista en el navegador</i> (2.ª ed.). Universidad Técnica Particular de Loja. https://juanp4105.github.io/audiolab-studio/guia/</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>Juan Pablo Arrobo-Agila · Universidad Técnica Particular de Loja · 2026</span>
+    <a href="../">Abrir Rimay Studio</a>
+  </footer>
+</div>
+</body>
+</html>

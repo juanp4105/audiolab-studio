@@ -6,6 +6,7 @@ Graba desde el micrófono (también sobre la música de otras pistas), dibuja l�
 de tiempo; aplica efectos y favoritos; mezcla con medidores reales y exporta WAV o MP3.
 
 - Página publicada: https://juanp4105.github.io/audiolab-studio/
+- Guía de uso (PDF, 2.ª edición, CC BY-NC-SA 4.0) y kit de práctica: https://juanp4105.github.io/audiolab-studio/guia/
 - Taller de guion: https://juanp4105.github.io/audiolab-studio/guion.html — escribir guiones de radio, pódcast y
   anuncios desde plantillas, con la duración en vivo, y enviarlos a Rimay Studio para grabar cada línea.
 - `index.html` es la compilación de un solo archivo (`npm run build:single` en el proyecto fuente).
